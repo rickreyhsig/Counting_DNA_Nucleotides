@@ -1,0 +1,1 @@
+This is a ruby script that counts DNA Nucleotides.  It is taken from the Rosalind Project found at http://rosalind.info/problems/dna/ and takes a text file as input containing a nucleotide sequence.  
