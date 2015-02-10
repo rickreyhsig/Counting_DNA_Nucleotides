@@ -1,12 +1,18 @@
 #!/usr/bin/env ruby
 
-input = ARGV[0]
+#Obtain file contents
+file_content = ARGV[0]
 
-a = input.count('A');
-c = input.count('C');
-g = input.count('G');
-u = input.count('U')
+#Place file content in file variable
+file = File.open(file_content, "r")
 
-p "#{a} #{c} #{g} #{u}"
+#Read file contents and place it inside variable
+dna_sequence = file.read
 
-# A simpler and cleaner solution I found on the website after implementing my own
+a = dna_sequence.count('A');
+c = dna_sequence.count('C');
+g = dna_sequence.count('G');
+t = dna_sequence.count('T')
+
+p "#{a} #{c} #{g} #{t}"
+
