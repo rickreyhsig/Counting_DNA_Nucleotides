@@ -15,8 +15,6 @@ numOfG = 0
 numOfT = 0
 
 dna_sequence.each_char do |i|
-    #puts i
-    #puts i.class
     if ( i == "A" || i == "a" )
       numOfA += 1
     elsif ( i == "C" || i == "c" )
@@ -29,9 +27,5 @@ dna_sequence.each_char do |i|
   end
 
 puts numOfA.to_s + " " + numOfC.to_s + " " + numOfG.to_s + " " + numOfT.to_s
-#puts numOfA numOfC numOfG numOfT
-#puts numOfC
-#puts numOfG
-#puts numOfT
 
 file.close
